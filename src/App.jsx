@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Search,MapPin,Calendar,ThermometerSun,Wind,Droplet,} from "lucide-react";
+import bgimg from './assets/bgimage.jpg'
 
 import NextFiveDays from "./components/NextFiveDays";
 
@@ -57,8 +58,8 @@ const App = () => {
   }
 
   return (
-    <div className=" justify-center align-middle   h-screen overflow-x-hidden bg-[url('assets\bgimage.jpg')] bg-cover bg-center ">
-      {/* div----1 */}
+    <div className=" justify-center align-middle   h-screen overflow-x-hidden  bg-cover bg-center "   style={{ backgroundImage: `url(${bgimg})` }}>
+      {/* TITLE DIV */}
 
       <div>
         <h1 className="text-2xl text-center text-blue-950">
